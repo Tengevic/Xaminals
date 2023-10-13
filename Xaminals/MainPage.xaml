@@ -24,7 +24,7 @@
                         ItemsSource="{Binding Items}">
 
             <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="{x:Type x:Docinfo}">
+                <DataTemplate x:DataType="{x:Type x:String}">
                     <SwipeView>
                         <SwipeView.RightItems>
                             <SwipeItems>
@@ -34,7 +34,7 @@
                         </SwipeView.RightItems>
                         <Grid Padding="0.5">
                             <Frame>
-                                <Label Text="{Binding Name}"
+                                <Label Text="{Binding .}" 
                                    FontSize="24"/>
                             </Frame>
                         </Grid>
