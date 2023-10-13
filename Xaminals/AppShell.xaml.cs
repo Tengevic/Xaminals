@@ -1,9 +1,13 @@
-﻿namespace Xaminals;
+﻿using Xaminals.Views;
+
+namespace Xaminals;
 
 public partial class AppShell : Shell
 {
 	public AppShell()
 	{
 		InitializeComponent();
+
+		Routing.RegisterRoute(nameof(DetailPage),typeof(DetailPage));
 	}
 }
